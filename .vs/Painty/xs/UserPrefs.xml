@@ -1,42 +1,39 @@
 ﻿<Properties StartupConfiguration="{A3FE8124-463E-4CED-989A-BB4D00D43961}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Painty FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.Painty.BLL.Painty.BLL FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Painty.DAL.Painty.DAL FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Painty/DTO/ImageDTO.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Painty/Initializer.cs">
     <Files>
-      <File FileName="Painty.DAL/Entities/User.cs" Line="12" Column="57" />
-      <File FileName="Painty.DAL/Entities/Image.cs" Line="1" Column="1" />
+      <File FileName="Painty.DAL/Entities/User.cs" Line="1" Column="1" />
+      <File FileName="Painty.DAL/Entities/Image.cs" />
       <File FileName="Painty.DAL/Entities/Friendship.cs" />
       <File FileName="Painty.DAL/EF/ApplicationDbContext.cs" />
-      <File FileName="Painty.DAL/Interfaces/IRepository.cs" Line="8" Column="33" />
-      <File FileName="Painty.DAL/Repositories/UserRepository.cs" />
+      <File FileName="Painty.DAL/Interfaces/IRepository.cs" Line="8" Column="24" />
+      <File FileName="Painty.DAL/Repositories/UserRepository.cs" Line="37" Column="10" />
       <File FileName="Painty.DAL/Repositories/ImageRepository.cs" />
-      <File FileName="Painty.DAL/Repositories/FriendshipRepository.cs" />
-      <File FileName="Painty.BLL/DTO/UserDTO.cs" Line="8" Column="40" />
-      <File FileName="Painty.BLL/DTO/ImageDTO.cs" Line="6" Column="9" />
-      <File FileName="Painty.BLL/DTO/FriendshipDTO.cs" Line="10" Column="41" />
+      <File FileName="Painty.DAL/Repositories/FriendshipRepository.cs" Line="10" Column="3" />
+      <File FileName="Painty.BLL/DTO/UserDTO.cs" Line="9" Column="3" />
+      <File FileName="Painty.BLL/DTO/ImageDTO.cs" />
+      <File FileName="Painty.BLL/DTO/FriendshipDTO.cs" Line="4" Column="2" />
       <File FileName="Painty.BLL/Interfaces/IUserService.cs" />
       <File FileName="Painty.BLL/Interfaces/IImageService.cs" />
       <File FileName="Painty.BLL/Interfaces/IFriendshipService.cs" />
-      <File FileName="Painty.BLL/Services/UserService.cs" />
+      <File FileName="Painty.BLL/Services/UserService.cs" Line="27" Column="61" />
       <File FileName="Painty.BLL/Services/ImageService.cs" />
-      <File FileName="Painty.BLL/Services/FriendshipService.cs" Line="27" Column="1" />
-      <File FileName="Painty/Controllers/UserController.cs" Line="67" Column="10" />
-      <File FileName="Painty/DTO/UserDTO.cs" Line="12" Column="31" />
-      <File FileName="Painty/DTO/ImageDTO.cs" Line="10" Column="13" />
-      <File FileName="Painty/DTO/FriendDTO.cs" Line="6" Column="30" />
-      <File FileName="Painty/Models/AddFriendRequest.cs" Line="6" Column="42" />
-      <File FileName="Painty/Program.cs" Line="1" Column="1" />
-      <File FileName="Painty/Controllers/ImageController.cs" Line="44" Column="9" />
+      <File FileName="Painty.BLL/Services/FriendshipService.cs" />
+      <File FileName="Painty/Controllers/UserController.cs" Line="50" Column="31" />
+      <File FileName="Painty/DTO/UserDTO.cs" Line="1" Column="1" />
+      <File FileName="Painty/DTO/FriendDTO.cs" Line="4" Column="20" />
+      <File FileName="Painty/Models/AddFriendRequest.cs" />
+      <File FileName="Painty/Program.cs" Line="20" Column="40" />
+      <File FileName="Painty/Controllers/ImageController.cs" Line="45" Column="25" />
+      <File FileName="Painty/Controllers/FriendshipController.cs" Line="25" Column="14" />
+      <File FileName="Painty/appsettings.json" />
+      <File FileName="Painty/Initializer.cs" Line="8" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Painty">
+          <Node name="Painty" expanded="True">
             <Node name="Painty.BLL" expanded="True">
               <Node name="Painty.BLL" expanded="True">
                 <Node name="DTO" expanded="True" />
@@ -54,16 +51,16 @@
             </Node>
             <Node name="Painty">
               <Node name="Controllers" expanded="True" />
-              <Node name="DTO">
-                <Node name="ImageDTO.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
+              <Node name="DTO" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Painty PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

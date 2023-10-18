@@ -1,0 +1,7 @@
+/Users/aleksandrlukasuk/Projects/Painty/Painty/obj/Debug/net7.0/Painty.csproj.AssemblyReference.cache
+/Users/aleksandrlukasuk/Projects/Painty/Painty/obj/Debug/net7.0/Painty.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleksandrlukasuk/Projects/Painty/Painty/obj/Debug/net7.0/Painty.AssemblyInfoInputs.cache
+/Users/aleksandrlukasuk/Projects/Painty/Painty/obj/Debug/net7.0/Painty.AssemblyInfo.cs
+/Users/aleksandrlukasuk/Projects/Painty/Painty/obj/Debug/net7.0/Painty.csproj.CoreCompileInputs.cache
+/Users/aleksandrlukasuk/Projects/Painty/Painty/obj/Debug/net7.0/Painty.MvcApplicationPartsAssemblyInfo.cs
+/Users/aleksandrlukasuk/Projects/Painty/Painty/obj/Debug/net7.0/Painty.MvcApplicationPartsAssemblyInfo.cache

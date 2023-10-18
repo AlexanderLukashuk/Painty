@@ -1,0 +1,15 @@
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/bin/Debug/net7.0/Painty.BLL.deps.json
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/bin/Debug/net7.0/Painty.BLL.dll
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/bin/Debug/net7.0/Painty.BLL.pdb
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/bin/Debug/net7.0/Painty.DAL.dll
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/bin/Debug/net7.0/Painty.DAL.pdb
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/obj/Debug/net7.0/Painty.BLL.csproj.AssemblyReference.cache
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/obj/Debug/net7.0/Painty.BLL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/obj/Debug/net7.0/Painty.BLL.AssemblyInfoInputs.cache
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/obj/Debug/net7.0/Painty.BLL.AssemblyInfo.cs
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/obj/Debug/net7.0/Painty.BLL.csproj.CoreCompileInputs.cache
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/obj/Debug/net7.0/Painty.BLL.csproj.CopyComplete
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/obj/Debug/net7.0/Painty.BLL.dll
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/obj/Debug/net7.0/refint/Painty.BLL.dll
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/obj/Debug/net7.0/Painty.BLL.pdb
+/Users/aleksandrlukasuk/Projects/Painty/Painty.BLL/obj/Debug/net7.0/ref/Painty.BLL.dll

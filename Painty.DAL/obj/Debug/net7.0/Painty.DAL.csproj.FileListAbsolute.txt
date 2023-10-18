@@ -1,0 +1,14 @@
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/bin/Debug/net7.0/Painty.DAL.deps.json
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/bin/Debug/net7.0/Painty.DAL.runtimeconfig.json
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/bin/Debug/net7.0/Painty.DAL.dll
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/bin/Debug/net7.0/Painty.DAL.pdb
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/obj/Debug/net7.0/Painty.DAL.csproj.AssemblyReference.cache
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/obj/Debug/net7.0/Painty.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/obj/Debug/net7.0/Painty.DAL.AssemblyInfoInputs.cache
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/obj/Debug/net7.0/Painty.DAL.AssemblyInfo.cs
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/obj/Debug/net7.0/Painty.DAL.csproj.CoreCompileInputs.cache
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/obj/Debug/net7.0/Painty.DAL.dll
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/obj/Debug/net7.0/refint/Painty.DAL.dll
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/obj/Debug/net7.0/Painty.DAL.pdb
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/obj/Debug/net7.0/Painty.DAL.genruntimeconfig.cache
+/Users/aleksandrlukasuk/Projects/Painty/Painty.DAL/obj/Debug/net7.0/ref/Painty.DAL.dll

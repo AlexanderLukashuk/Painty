@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Painty;
 using Painty.DAL.EF;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseSqlServer(connectionString, optionsBuilder => optionsBuilder.MigrationsAssembly("Painty")));
 
 // Add services to the container.
+builder.Services.InitializeRepositories();
+builder.Services.InitializeServices();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

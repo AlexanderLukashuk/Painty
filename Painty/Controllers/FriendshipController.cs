@@ -21,6 +21,8 @@ namespace Painty.Controllers
         }
 
         [HttpPost("add")]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(201)]
         public async Task<IActionResult> AddFriend([FromBody] FriendshipDTO friendship)
         {
             await _friendshipService.AddFriendshipAsync(friendship);
