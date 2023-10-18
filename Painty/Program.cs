@@ -1,6 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Painty;
 using Painty.DAL.EF;
+using Painty.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseSqlServer(connectionString, optionsBuilder => optionsBuilder.MigrationsAssembly("Painty")));
 
 // Add services to the container.
+var mappingConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new UserProfile());
+    mc.AddProfile(new ImageProfile());
+    mc.AddProfile(new FriendshipProfile());
+});
+
+builder.Services.AddSingleton<IMapper>(mappingConfig.CreateMapper());
+
 builder.Services.InitializeRepositories();
 builder.Services.InitializeServices();
 
