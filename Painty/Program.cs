@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Painty;
+using Painty.BLL.Models;
 using Painty.DAL.EF;
 using Painty.Mappings;
 
@@ -11,6 +12,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
         options.UseSqlServer(connectionString, optionsBuilder => optionsBuilder.MigrationsAssembly("Painty")));
+
+builder.Services.AddDefaultIdentity<ApplicationUser>() // ApplicationUser - ваш класс пользователя
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 // Add services to the container.
 var mappingConfig = new MapperConfiguration(mc =>
@@ -41,6 +45,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
