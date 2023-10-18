@@ -28,6 +28,7 @@ namespace Painty.Controllers
             return Ok("Friendship added successfully");
         }
 
+        [HttpPost("remove")]
         public async Task<IActionResult> RemoveFriendship(int userId, int friendId)
         {
             bool success = await _friendshipService.RemoveFriendshipAsync(userId, friendId);
