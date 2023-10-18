@@ -1,13 +1,13 @@
 ﻿using System;
-namespace Painty.BLL.DTO
+namespace Painty.DTO
 {
-	public class ImageDTO
+	public class ImageRequest
 	{
 		public int Id { get; set; }
 
         public int UserId { get; set; }
 
-        public string? FileName { get; set; }
+        public string? Title { get; set; }
 	}
 }
 
