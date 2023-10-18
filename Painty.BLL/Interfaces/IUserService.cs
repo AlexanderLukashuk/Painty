@@ -11,7 +11,9 @@ namespace Painty.BLL.Interfaces
 
 		Task AddFriendAsync(int userId, int friendId);
 
-		Task<bool> AreFriendsAsync(int userId, int friendId);
-	}
+        //Task<bool> AreFriendsAsync(int userId, int friendId);
+
+        Task<IEnumerable<ImageDTO>> GetImagesByUserIdAsync(int userId);
+    }
 }
 
