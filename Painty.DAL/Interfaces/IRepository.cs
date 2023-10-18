@@ -5,7 +5,7 @@ namespace Painty.DAL.Interfaces
 	{
         Task<T> GetById(int id);
 
-		IEnumerable<T> GetAll();
+		Task<IEnumerable<T>> GetAll();
 
 		Task Add(T enitity);
 

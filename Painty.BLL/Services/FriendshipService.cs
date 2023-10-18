@@ -27,10 +27,13 @@ namespace Painty.BLL.Services
 
         public async Task<IEnumerable<FriendshipDTO>> GetFriendshipsByUserIdAsync(int userId)
         {
-			var friendship = _friendshipRepository.GetAll()
+			var friendship = await _friendshipRepository.GetAll();
+
+			var filteredFriendships = friendship
 				.Where(f => f.User1Id == userId || f.User2Id == userId);
-			return _mapper.Map<IEnumerable<FriendshipDTO>>(friendship);
-        }
+
+			return _mapper.Map<IEnumerable<FriendshipDTO>>(filteredFriendships);
+		}
     }
 }
 

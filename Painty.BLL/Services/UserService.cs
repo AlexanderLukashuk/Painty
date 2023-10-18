@@ -24,10 +24,10 @@ namespace Painty.BLL.Services
 
         public async Task AddFriendAsync(int userId, int friendId)
         {
-            var existingFriendship = _friendshipRepository.GetAll()
-                .FirstOrDefault(f =>
-                    (f.User1Id == userId && f.User2Id == friendId) ||
-                    (f.User1Id == friendId && f.User2Id == userId));
+            var friendships = await _friendshipRepository.GetAll();
+            var existingFriendship = friendships.FirstOrDefault(f =>
+                (f.User1Id == userId && f.User2Id == friendId) ||
+                (f.User1Id == friendId && f.User2Id == userId));
 
             if (existingFriendship == null)
             {
@@ -42,7 +42,7 @@ namespace Painty.BLL.Services
 
         public async Task<IEnumerable<UserDTO>> GetFriendsAsync(int userId)
         {
-            var friendships = _friendshipRepository.GetAll();
+            var friendships = await _friendshipRepository.GetAll();
             var friendIds = friendships
                 .Where(f => f.User1Id == userId || f.User2Id == userId)
                 .Select(f => f.User1Id == userId ? f.User2Id : f.User1Id)

@@ -31,9 +31,9 @@ namespace Painty.DAL.Repositories
             }
         }
 
-        public IEnumerable<User> GetAll()
+        public async Task<IEnumerable<User>> GetAll()
         {
-            return _context.Users;
+            return await _context.Users.ToListAsync();
         }
 
         public async Task<User> GetById(int id)

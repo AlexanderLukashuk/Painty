@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 using Painty.DAL.EF;
 using Painty.DAL.Entities;
 using Painty.DAL.Interfaces;
@@ -30,9 +31,9 @@ namespace Painty.DAL.Repositories
             }
         }
 
-        public IEnumerable<Friendship> GetAll()
+        public async Task<IEnumerable<Friendship>> GetAll()
         {
-            return _context.Friendships;
+            return await _context.Friendships.ToListAsync();
         }
 
         public async Task<Friendship> GetById(int id)

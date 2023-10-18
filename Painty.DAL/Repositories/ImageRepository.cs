@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 using Painty.DAL.EF;
 using Painty.DAL.Entities;
 using Painty.DAL.Interfaces;
@@ -30,9 +31,9 @@ namespace Painty.DAL.Repositories
             }
         }
 
-        public IEnumerable<Image> GetAll()
+        public async Task<IEnumerable<Image>> GetAll()
         {
-            return _context.Images;
+            return await _context.Images.ToListAsync();
         }
 
         public async Task<Image> GetById(int id)

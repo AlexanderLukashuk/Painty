@@ -38,8 +38,12 @@ namespace Painty.BLL.Services
 
         public async Task<IEnumerable<ImageDTO>> GetImagesByUserIdAsync(int userId)
         {
-            var images = _imageRepository.GetAll().Where(image => image.UserId == userId);
-            return _mapper.Map<IEnumerable<ImageDTO>>(images);
+            var images = await _imageRepository.GetAll();
+
+            var userImages = images
+                .Where(image => image.UserId == userId);
+
+            return _mapper.Map<IEnumerable<ImageDTO>>(userImages);
         }
     }
 }
