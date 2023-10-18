@@ -7,7 +7,7 @@ namespace Painty.DTO
 
 		public string? UserName { get; set; }
 
-		public IEnumerable<ImageDTO>? Images { get; set; }
+		public IEnumerable<ImageRequest>? Images { get; set; }
 
 		public IEnumerable<FriendDTO>? Friends { get; set; }
 	}
