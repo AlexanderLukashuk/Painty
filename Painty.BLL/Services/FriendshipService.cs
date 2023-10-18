@@ -34,6 +34,23 @@ namespace Painty.BLL.Services
 
 			return _mapper.Map<IEnumerable<FriendshipDTO>>(filteredFriendships);
 		}
+
+        public async Task<bool> RemoveFriendshipAsync(int userId, int friendId)
+        {
+			var friendships = await _friendshipRepository.GetAll();
+
+			var friendship = friendships
+				.FirstOrDefault(f => (f.User1Id == userId && f.User2Id == friendId) ||
+				(f.User1Id == friendId && f.User2Id == userId));
+
+			if (friendship != null)
+			{
+				await _friendshipRepository.Delete(friendship.Id);
+				return true;
+			}
+
+			return false;
+        }
     }
 }
 

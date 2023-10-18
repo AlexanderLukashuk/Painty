@@ -10,6 +10,8 @@ namespace Painty.BLL.Interfaces
         Task<IEnumerable<FriendshipDTO>> GetFriendshipsByUserIdAsync(int userId);
 
         Task AddFriendshipAsync(FriendshipDTO friendship);
+
+        Task<bool> RemoveFriendshipAsync(int userId, int friendId);
     }
 }
 
