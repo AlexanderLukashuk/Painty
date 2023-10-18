@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Painty.BLL.Interfaces;
+using Painty.DTO;
+using Painty.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -24,6 +26,7 @@ namespace Painty.Controllers
             _mapper = mapper;
         }
 
+        [HttpGet("UserId")]
         public async Task<IActionResult> GetUser(int userId)
         {
             var user = await _userService.GetUserByIdAsync(userId);
@@ -36,42 +39,31 @@ namespace Painty.Controllers
             return Ok(userDTO);
         }
 
-        //public async Task<IActionResult> GetFriends(int userId)
-        //{
-        //    var friends = await _userService.GetFriendsAsync(userId);
-        //    var frie
-        //}
-
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet("{userId}/friends")]
+        public async Task<IActionResult> GetFriends(int userId)
         {
-            return new string[] { "value1", "value2" };
+            var friends = await _userService.GetFriendsAsync(userId);
+            var friendDTOs = _mapper.Map<IEnumerable<FriendDTO>>(friends);
+            return Ok(friendDTOs);
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpPost("{userId}/add-friend")]
+        public async Task<IActionResult> AddFriend(int userId, [FromBody] AddFriendRequest request)
         {
-            return "value";
-        }
+            var user = await _userService.GetUserByIdAsync(userId);
+            if (user == null)
+            {
+                return NotFound();
+            }
 
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
+            var friend = await _userService.GetUserByIdAsync(request.FriendId);
+            if (friend == null)
+            {
+                return NotFound();
+            }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            await _userService.AddFriendAsync(userId, request.FriendId);
+            return NoContent();
         }
     }
 }
