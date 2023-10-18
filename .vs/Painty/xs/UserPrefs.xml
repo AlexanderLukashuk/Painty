@@ -1,27 +1,34 @@
 ﻿<Properties StartupConfiguration="{A3FE8124-463E-4CED-989A-BB4D00D43961}|https">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Painty.DAL.Painty.DAL FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Painty PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Painty.BLL.Painty.BLL FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Painty FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Painty.DAL/Entities/Friendship.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Painty.DAL/Entities/User.cs">
     <Files>
-      <File FileName="Painty.DAL/Entities/User.cs" Line="1" Column="1" />
-      <File FileName="Painty.DAL/Entities/Image.cs" Line="1" Column="1" />
-      <File FileName="Painty.DAL/Entities/Friendship.cs" Line="1" Column="1" />
+      <File FileName="Painty.DAL/Entities/User.cs" Line="8" Column="46" />
+      <File FileName="Painty.DAL/Entities/Image.cs" Line="11" Column="1" />
+      <File FileName="Painty.DAL/Entities/Friendship.cs" Line="4" Column="25" />
+      <File FileName="Painty.DAL/EF/ApplicationDbContext.cs" Line="28" Column="35" />
+      <File FileName="Painty.DAL/Interfaces/IRepository.cs" Line="6" Column="17" />
+      <File FileName="Painty.DAL/Repositories/UserRepository.cs" Line="47" Column="47" />
+      <File FileName="Painty.DAL/Repositories/ImageRepository.cs" Line="43" Column="54" />
+      <File FileName="Painty.DAL/Repositories/FriendshipRepository.cs" Line="12" Column="60" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Painty">
+            <Node name="Painty.BLL" expanded="True" />
             <Node name="Painty.DAL" expanded="True">
-              <Node name="Painty.DAL">
-                <Node name="Entities">
-                  <Node name="Friendship.cs" selected="True" />
+              <Node name="Painty.DAL" expanded="True">
+                <Node name="EF" expanded="True" />
+                <Node name="Entities" expanded="True">
+                  <Node name="User.cs" selected="True" />
                 </Node>
+                <Node name="Interfaces" expanded="True" />
+                <Node name="Repositories" expanded="True" />
               </Node>
             </Node>
             <Node name="Painty" expanded="True" />
@@ -30,4 +37,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
