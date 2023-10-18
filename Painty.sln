@@ -5,6 +5,10 @@ VisualStudioVersion = 25.0.1706.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Painty", "Painty\Painty.csproj", "{A3FE8124-463E-4CED-989A-BB4D00D43961}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Painty.DAL", "Painty.DAL", "{29CD01E5-F2CC-4176-A528-4E9AC5AD7219}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Painty.DAL", "Painty.DAL\Painty.DAL.csproj", "{A4CB2D98-96B0-4D95-A6DD-28C25705AF00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +19,18 @@ Global
 		{A3FE8124-463E-4CED-989A-BB4D00D43961}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3FE8124-463E-4CED-989A-BB4D00D43961}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3FE8124-463E-4CED-989A-BB4D00D43961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4CB2D98-96B0-4D95-A6DD-28C25705AF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4CB2D98-96B0-4D95-A6DD-28C25705AF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4CB2D98-96B0-4D95-A6DD-28C25705AF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4CB2D98-96B0-4D95-A6DD-28C25705AF00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C913C052-2B80-48B1-9497-E333AA6A8026}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4CB2D98-96B0-4D95-A6DD-28C25705AF00} = {29CD01E5-F2CC-4176-A528-4E9AC5AD7219}
 	EndGlobalSection
 EndGlobal

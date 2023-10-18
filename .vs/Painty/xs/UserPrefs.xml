@@ -1,4 +1,33 @@
 ﻿<Properties StartupConfiguration="{A3FE8124-463E-4CED-989A-BB4D00D43961}|https">
+  <MonoDevelop.Ide.ItemProperties.Painty.DAL.Painty.DAL FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Painty FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Painty FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Painty.DAL/Entities/Friendship.cs">
+    <Files>
+      <File FileName="Painty.DAL/Entities/User.cs" Line="1" Column="1" />
+      <File FileName="Painty.DAL/Entities/Image.cs" Line="1" Column="1" />
+      <File FileName="Painty.DAL/Entities/Friendship.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Painty">
+            <Node name="Painty.DAL" expanded="True">
+              <Node name="Painty.DAL">
+                <Node name="Entities">
+                  <Node name="Friendship.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Painty" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>
