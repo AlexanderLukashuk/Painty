@@ -1,5 +1,4 @@
 ﻿using System;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Painty.BLL.Models
