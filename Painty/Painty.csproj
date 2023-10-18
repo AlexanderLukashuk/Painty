@@ -16,9 +16,11 @@
 
   <ItemGroup>
     <None Remove="Controllers\" />
+    <None Remove="DTO\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="DTO\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Painty.BLL\Painty.BLL.csproj">
